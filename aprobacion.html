@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aprobar petición de mascota en refugio</title>
+</head>
+<body>
+	<h1>Aprobar petición de mascota en refugio</h1>
+		<form action="#" method="get">
+			<label for="nombre_solicitante">Nombre del solicitante:</label><br>
+			<input type="text" id="nombre_solicitante" name="nombre_solicitante" readonly><br>
+	
+			<label for="fecha_solicitud">Fecha de solicitud:</label><br>
+			<input type="date" id="fecha_solicitud" name="fecha_solicitud" readonly><br>
+	
+			<label for="tipo_mascota">Tipo de mascota:</label><br>
+			<input type="text" id="tipo_mascota" name="tipo_mascota" readonly><br>
+	
+			<label for="nombre_mascota">Nombre de la mascota:</label><br>
+			<input type="text" id="nombre_mascota" name="nombre_mascota" readonly><br>
+	
+			<label for="fecha_hora_cita">Fecha y hora solicitada para la cita:</label><br>
+			<input type="datetime-local" id="fecha_hora_cita" name="fecha_hora_cita" readonly><br>
+	
+			<label for="decision">¿Aprobar o denegar la petición de cita?</label><br>
+			<select id="decision" name="decision">
+				<option value="aprobado">Aprobar</option>
+				<option value="denegado">Denegar</option>
+			</select><br>
+	
+			<label for="comentarios">Comentarios adicionales:</label><br>
+			<textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+	
+			<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

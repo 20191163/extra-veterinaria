@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aprobar una veterinaria o tienda de apoyo</title>
+</head>
+<body>
+	
+
+	<h1>Aprobar una veterinaria o tienda de apoyo</h1>
+	<label for="nombre_negocio">Nombre de la veterinaria o tienda de mascotas:</label><br>
+		<input type="text" id="nombre_negocio" name="nombre_negocio" readonly><br>
+
+		<label for="fecha_solicitud">Fecha de solicitud:</label><br>
+		<input type="date" id="fecha_solicitud" name="fecha_solicitud" readonly><br>
+
+		<label for="tipo_negocio">Tipo de negocio:</label><br>
+		<input type="text" id="tipo_negocio" name="tipo_negocio" readonly><br>
+
+		<label for="ubicacion_negocio">Ubicación del negocio:</label><br>
+		<input type="text" id="ubicacion_negocio" name="ubicacion_negocio" readonly><br>
+
+		<label for="descripcion_negocio">Descripción del negocio:</label><br>
+		<textarea id="descripcion_negocio" name="descripcion_negocio" rows="4" cols="50" readonly></textarea><br>
+
+		<label for="decision">¿Aprobar o denegar la solicitud de apoyo?</label><br>
+		<select id="decision" name="decision">
+			<option value="aprobado">Aprobar</option>
+			<option value="denegado">Denegar</option>
+		</select><br>
+
+		<label for="comentarios">Comentarios adicionales:</label><br>
+		<textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>

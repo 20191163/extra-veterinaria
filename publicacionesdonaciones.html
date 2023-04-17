@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Publicar donaciones y sus usos</title>
+</head>
+<body>
+	<h1>Publicar donaciones y sus usos</h1>
+	<form action="#" method="post">
+		<label for="nombre">Nombre del donante:</label>
+		<input type="text" id="nombre" name="nombre" pattern="[A-Za-z ]+" required>
+		<small>Debe contener solo letras del alfabeto y espacios.</small>
+		<br><br>
+		<label for="monto">Monto de la donación:</label>
+		<input type="number" id="monto" name="monto" min="0" max="1000000" required>
+		<small>Debe ser un número entre 0 y 1000000.</small>
+		<br><br>
+		<label for="uso">Uso de la donación:</label>
+		<textarea id="uso" name="uso" rows="4" cols="50" pattern="[A-Za-z0-9 ,.-]+" required></textarea>
+		<small>Debe contener solo letras, números, espacios y los siguientes caracteres: , . -</small>
+		<br><br>
+		<input type="submit" value="Publicar">
+	</form>
+</body>
+</html>
